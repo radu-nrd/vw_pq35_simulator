@@ -11,6 +11,8 @@ def to_bitarray(value:object,signed:bool,length_bits:int,endianness:Endianness):
         bits_type = __build_bits_type("int",signed,endianness)
         return BitArray(Bits(f"{bits_type}:{length_bits} = {value}"))
     elif val_type is float:
+        if length_bits not in [16,32,64]:
+            raise ValueError(f'Cannot convert a float value with length_bits = {length_bits}. The float converter only accepts length_bits = [16,32,64]')
         bits_type = __build_bits_type("float",signed,endianness)
         return BitArray(Bits(f"{bits_type}:{length_bits} = {value}"))
 

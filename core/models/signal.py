@@ -1,8 +1,7 @@
 from abc import ABC
-from core.models.endianness import Endianness
-from bitstring import Bits, BitArray
-
-RawType = int | float | bool | bytes
+from core import Endianness
+from core import RawType
+from bitstring import BitArray
 
 class Signal(ABC):
     def __init__(self,

@@ -1,4 +1,4 @@
-from abc import ABC,abstractmethod
+from abc import ABC
 from core.models.signal import Signal
 
 class Message(ABC):
@@ -6,7 +6,7 @@ class Message(ABC):
                  frame_id:str,
                  length_dlc:int,
                  cycle_time_ms : int = 100,
-                 signals : dict[str,Signal] | None = {},
+                 signals : dict[str,Signal] = {},
                  tx_ecu:str="",
                  rx_ecus:list[str]=[]):
         self._frame_id = frame_id
