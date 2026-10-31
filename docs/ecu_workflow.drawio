@@ -1,0 +1,62 @@
+<mxfile host="Electron">
+  <diagram name="ECU Architecture" id="M2uNHwCVW5F9cNF6oaXP">
+    <mxGraphModel dx="1414" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LKrRdPd13_wqfpasXrWa-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=light-dark(#0F172A,#0F172A);strokeColor=light-dark(#334155,#334155);strokeWidth=2;shadow=0;" value="" vertex="1">
+          <mxGeometry height="380" width="1070" x="360" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=light-dark(#94A3B8,#94A3B8);fontFamily=Helvetica;fontSize=13;fontStyle=1;" value="ECU Architecture &amp; Frame Layout" vertex="1">
+          <mxGeometry height="24" width="300" x="390" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-3" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=36;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=light-dark(#334155,#334155);fontColor=light-dark(#FFFFFF,#FFFFFF);strokeColor=light-dark(#475569,#475569);strokeWidth=1.5;rounded=1;arcSize=6;" value="ECU" vertex="1">
+          <mxGeometry height="174" width="240" x="400" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-4" parent="LKrRdPd13_wqfpasXrWa-3" style="text;strokeColor=none;fillColor=light-dark(#1E293B,#1E293B);align=left;verticalAlign=top;spacingLeft=10;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=light-dark(#F8FAFC,#F8FAFC);fontFamily=monospace;fontSize=12;" value="+ id: int&#xa;+ name: str&#xa;+ description: str&#xa;+ tx_frames: Dict[int, Message]&#xa;+ rx_frames: Dict[int, Message]" vertex="1">
+          <mxGeometry height="96" width="240" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-5" parent="LKrRdPd13_wqfpasXrWa-3" style="line;strokeWidth=1;fillColor=none;strokeColor=light-dark(#475569,#475569);align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="1" width="240" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-6" parent="LKrRdPd13_wqfpasXrWa-3" style="text;strokeColor=none;fillColor=light-dark(#1E293B,#1E293B);align=left;verticalAlign=top;spacingLeft=10;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=light-dark(#CBD5E1,#CBD5E1);fontFamily=monospace;fontSize=12;" value="+ transmit(frame_id: int)&#xa;+ receive(frame_id: int)" vertex="1">
+          <mxGeometry height="41" width="240" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-7" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=36;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=light-dark(#0284C7,#0284C7);fontColor=light-dark(#FFFFFF,#FFFFFF);strokeColor=light-dark(#0369A1,#0369A1);strokeWidth=1.5;rounded=1;arcSize=6;" value="Message" vertex="1">
+          <mxGeometry height="174" width="240" x="770" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-8" parent="LKrRdPd13_wqfpasXrWa-7" style="text;strokeColor=none;fillColor=light-dark(#1E293B,#1E293B);align=left;verticalAlign=top;spacingLeft=10;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=light-dark(#F8FAFC,#F8FAFC);fontFamily=monospace;fontSize=12;" value="+ frame_id: int&#xa;+ length_dlc: int&#xa;+ signals: Dict[str, Signal]&#xa;+ cycle_time_ms: int = 20&#xa;+ tx_ecu: str = &quot;&quot;&#xa;+ rx_ecu: str = &quot;&quot;" vertex="1">
+          <mxGeometry height="94" width="240" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-9" parent="LKrRdPd13_wqfpasXrWa-7" style="line;strokeWidth=1;fillColor=none;strokeColor=light-dark(#475569,#475569);align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="1" width="240" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-10" parent="LKrRdPd13_wqfpasXrWa-7" style="text;strokeColor=none;fillColor=light-dark(#1E293B,#1E293B);align=left;verticalAlign=top;spacingLeft=10;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=light-dark(#CBD5E1,#CBD5E1);fontFamily=monospace;fontSize=12;" value="+ pack_payload() -&gt; bytearray&#xa;+ unpack(raw: bytearray)" vertex="1">
+          <mxGeometry height="43" width="240" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-11" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=36;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=light-dark(#0D9488,#0D9488);fontColor=light-dark(#FFFFFF,#FFFFFF);strokeColor=light-dark(#0F766E,#0F766E);strokeWidth=1.5;rounded=1;arcSize=6;" value="Signal" vertex="1">
+          <mxGeometry height="210" width="250" x="1140" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-12" parent="LKrRdPd13_wqfpasXrWa-11" style="text;strokeColor=none;fillColor=light-dark(#1E293B,#1E293B);align=left;verticalAlign=top;spacingLeft=10;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=light-dark(#F8FAFC,#F8FAFC);fontFamily=monospace;fontSize=12;" value="+ name: str&#xa;+ start_bit: int&#xa;+ length_bits: int&#xa;+ raw_value: int&#xa;+ factor: float = 1.0&#xa;+ offset: float = 0.0&#xa;+ endianness: str = &#39;little&#39;" vertex="1">
+          <mxGeometry height="126" width="250" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-13" parent="LKrRdPd13_wqfpasXrWa-11" style="line;strokeWidth=1;fillColor=none;strokeColor=light-dark(#475569,#475569);align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="1" width="250" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-14" parent="LKrRdPd13_wqfpasXrWa-11" style="text;strokeColor=none;fillColor=light-dark(#1E293B,#1E293B);align=left;verticalAlign=top;spacingLeft=10;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=light-dark(#CBD5E1,#CBD5E1);fontFamily=monospace;fontSize=12;" value="+ physical_value() -&gt; float&#xa;+ encode(phys_val: float)" vertex="1">
+          <mxGeometry height="47" width="250" y="163" as="geometry" />
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-15" edge="1" parent="1" source="LKrRdPd13_wqfpasXrWa-3" style="endArrow=diamondThin;endFill=1;endSize=14;html=1;rounded=0;strokeWidth=2;strokeColor=light-dark(#64748B,#64748B);fontColor=light-dark(#F1F5F9,#F1F5F9);labelBackgroundColor=light-dark(#0F172A,#0F172A);fontSize=11;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="LKrRdPd13_wqfpasXrWa-7" value="manages / transmits">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LKrRdPd13_wqfpasXrWa-16" edge="1" parent="1" source="LKrRdPd13_wqfpasXrWa-7" style="endArrow=diamondThin;endFill=1;endSize=14;html=1;rounded=0;strokeWidth=2;strokeColor=light-dark(#64748B,#64748B);fontColor=light-dark(#F1F5F9,#F1F5F9);labelBackgroundColor=light-dark(#0F172A,#0F172A);fontSize=11;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="LKrRdPd13_wqfpasXrWa-11" value="packs">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

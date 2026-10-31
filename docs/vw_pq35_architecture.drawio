@@ -1,0 +1,217 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="h3nvX1N8Us2mkyQySYdi">
+    <mxGraphModel dx="5135" dy="2548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UuW73liLEhGD_-yo2WwR-67" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" value="" vertex="1">
+          <mxGeometry height="820" width="2850" x="-850" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-1" parent="1" style="line;strokeWidth=4;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;strokeColor=#990000;" value="" vertex="1">
+          <mxGeometry height="10" width="880" x="-750" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Engine&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J623)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="-800" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-3" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-2" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="UuW73liLEhGD_-yo2WwR-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-580" y="430" as="sourcePoint" />
+            <mxPoint x="-530" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Transmission&lt;div&gt;TCM&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J743)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="-680" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-10" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="UuW73liLEhGD_-yo2WwR-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-640" y="320" as="sourcePoint" />
+            <mxPoint x="-590" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="ABS/ESP&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J104)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="-560" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-12" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="UuW73liLEhGD_-yo2WwR-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-570" y="490" as="sourcePoint" />
+            <mxPoint x="-520" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Power Steering&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J500)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="-440" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Airbag Control&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J234)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="-320" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Steering Angle&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(G85)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="-200" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-17" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="UuW73liLEhGD_-yo2WwR-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-420" y="380" as="sourcePoint" />
+            <mxPoint x="-370" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-18" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="UuW73liLEhGD_-yo2WwR-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-330" y="450" as="sourcePoint" />
+            <mxPoint x="-280" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-19" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="UuW73liLEhGD_-yo2WwR-16" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-150" y="380" as="sourcePoint" />
+            <mxPoint x="-100" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-22" parent="1" style="line;strokeWidth=4;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;strokeColor=#0066CC;" value="" vertex="1">
+          <mxGeometry height="10" width="1270" x="630" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Central Electrics&lt;div&gt;ECU&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J519)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="750" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-24" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-23" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="UuW73liLEhGD_-yo2WwR-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="960" y="300" as="sourcePoint" />
+            <mxPoint x="1010" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Steering Column&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J527)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="870" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-27" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-25" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UuW73liLEhGD_-yo2WwR-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1090" y="180" as="sourcePoint" />
+            <mxPoint x="1140" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Climatronic&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J255)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="990" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-29" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-28" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="UuW73liLEhGD_-yo2WwR-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1080" y="380" as="sourcePoint" />
+            <mxPoint x="1130" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Parking Brake EPB&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J540)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="1110" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-31" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-22" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="UuW73liLEhGD_-yo2WwR-30" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1160" y="310" as="sourcePoint" />
+            <mxPoint x="1210" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Parking Aid PDC&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J446)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="1230" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-33" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-32" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="UuW73liLEhGD_-yo2WwR-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1310" y="370" as="sourcePoint" />
+            <mxPoint x="1360" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Tire Pressure RDK&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J502)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="1350" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-35" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-22" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="UuW73liLEhGD_-yo2WwR-34" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1400" y="380" as="sourcePoint" />
+            <mxPoint x="1450" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Driver&lt;div&gt;Door Module&lt;/div&gt;&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J386)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="1470" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-37" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-36" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="UuW73liLEhGD_-yo2WwR-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1650" y="380" as="sourcePoint" />
+            <mxPoint x="1700" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Passenger&lt;br&gt;&lt;div&gt;Door Module&lt;/div&gt;&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J387)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="1590" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-39" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-38" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UuW73liLEhGD_-yo2WwR-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1630" y="380" as="sourcePoint" />
+            <mxPoint x="1680" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Read&lt;div&gt;Door Module&lt;/div&gt;&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J388)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="1710" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Read&lt;div&gt;Door Module&lt;/div&gt;&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J389)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="1830" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-42" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-40" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="UuW73liLEhGD_-yo2WwR-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1890" y="370" as="sourcePoint" />
+            <mxPoint x="1940" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-43" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-22" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="UuW73liLEhGD_-yo2WwR-41" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1870" y="340" as="sourcePoint" />
+            <mxPoint x="1920" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-46" parent="1" style="line;strokeWidth=4;direction=south;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;strokeColor=#994C00;" value="" vertex="1">
+          <mxGeometry height="160" width="10" x="227.5" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-47" parent="1" style="line;strokeWidth=4;direction=south;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;strokeColor=#66CC00;" value="" vertex="1">
+          <mxGeometry height="200" width="10" x="355" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-48" parent="1" style="line;strokeWidth=4;direction=south;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;strokeColor=#4C0099;" value="" vertex="1">
+          <mxGeometry height="160" width="10" x="482.5" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-50" parent="1" style="line;strokeWidth=4;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;strokeColor=#994C00;" value="" vertex="1">
+          <mxGeometry height="10" width="170" x="67.5" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-52" parent="1" style="line;strokeWidth=4;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;strokeColor=#4C0099;" value="" vertex="1">
+          <mxGeometry height="10" width="170" x="482.5" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Instrument Cluster&lt;div&gt;Dashboard&lt;/div&gt;&lt;div&gt;Ecu&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;(J285)&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="20" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-54" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-53" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="UuW73liLEhGD_-yo2WwR-50" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="50" y="650" as="sourcePoint" />
+            <mxPoint x="100" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-55" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Diag OBD-II&lt;div&gt;&lt;b&gt;Port&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="300" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-57" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Navigation&lt;div&gt;Radio&lt;/div&gt;&lt;div&gt;&lt;b&gt;(J503)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="580" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-58" edge="1" parent="1" source="UuW73liLEhGD_-yo2WwR-57" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="UuW73liLEhGD_-yo2WwR-52" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="710" y="780" as="sourcePoint" />
+            <mxPoint x="630" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-60" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;b&gt;Gateway ECU&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="270" width="500" x="130" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-61" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#990000;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;CAN Powertrain&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="250" x="-130" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#0066CC;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;CAN Komfort&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="250" x="630" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-63" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#994C00;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;CAN Kombi&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="250" x="27.5" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-65" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#4C0099;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;CAN Info&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="250" x="442.5" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="UuW73liLEhGD_-yo2WwR-66" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#66CC00;rotation=90;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;CAN Diag&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="250" x="255" y="600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

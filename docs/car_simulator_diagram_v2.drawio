@@ -1,0 +1,118 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="dKKP9yysa-raO5Owl20P">
+    <mxGraphModel dx="2049" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="abQfL05rdA4Keaba4nyr-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=default;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="1170" width="1560" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;" value="" vertex="1">
+          <mxGeometry height="50" width="1560" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Car Simulator Architecture&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="270" x="710" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#F8CECC,#512D2B);strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="200" width="1520" x="100" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Domain and Vehicle Dynamics ( Phisical Model )&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="400" x="120" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;BaseEcu&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="360" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;BaseMessage&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="560" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;BaseSignal&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="760" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;VehicleState&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="960" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#DAE8FC,#1D293B);strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="200" width="1520" x="100" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Actors / Components&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="400" x="120" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Engine ECM&lt;/b&gt;&lt;div&gt;&lt;b&gt;(J623)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="460" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;ABS/ESP&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;(J104)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="660" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Gateway&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;(J533 Route)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="1060" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="950" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1005" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="895" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=light-dark(#D5E8D4,#1F2F1E);strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="200" width="1520" x="100" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Encoder / Decoder&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="400" x="120" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Encoder&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="660" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="abQfL05rdA4Keaba4nyr-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Decoder&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="860" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=light-dark(#FFE6CC,#36210A);strokeColor=#d79b00;" value="" vertex="1">
+          <mxGeometry height="200" width="1090" x="100" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Bus Manager Layer&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="400" x="120" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;powertrain&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="145" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;komfort&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="345" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;kombi&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="545" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;info&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="745" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;diag&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="945" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=light-dark(#FFF2CC,#281D00);strokeColor=#d6b656;" value="" vertex="1">
+          <mxGeometry height="200" width="1090" x="100" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Hardware / OS Adapter Layer&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="400" x="120" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;SocketCanBusAdapter&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="445" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;MockCanBusAdapter&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="645" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#BAC8D3,#39454E);strokeColor=#23445d;" value="" vertex="1">
+          <mxGeometry height="420" width="400" x="1210" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Dashboard UI&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="250" x="1220" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-17" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;UI&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="1310" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="OoZUerCPBUzPNiknvRAW-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;BaseCanBus&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="1160" y="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
