@@ -3,13 +3,13 @@ from core.models.message import Message
 
 class Ecu(ABC):
     def __init__(self,
-                 id:int,
+                 id:str,
                  name:str,
                  description:str,
                  tx_frames:dict[str,Message] = {},
                  rx_frames:dict[str,Message] = {}
                  ):
-        self._id : int = id
+        self._id : str = id
         self._name:str = name
         self._description:str = description
         self._tx_frames = tx_frames
