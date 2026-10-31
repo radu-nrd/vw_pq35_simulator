@@ -4,7 +4,6 @@ from core import BusStatus
 from core import Event
 from core import EventEmitter
 from core import Message
-from cantools.database.can import Database
 from exceptions import EcuAlreadyConnectedException
 from exceptions import EcuNotConnectedException
 
@@ -61,26 +60,26 @@ class CanBus(ABC):
         return self._frame_broadcasted
 
     @abstractmethod
-    def attach_ecu(self,ecu:Ecu):
+    def attach_ecu(self,ecu:Ecu) -> None:
         if self._connected_ecus.get(ecu.id,None) == None:
             self._connected_ecus[ecu.id] = ecu
         raise EcuAlreadyConnectedException(ecu,self)
 
     @abstractmethod
-    def detach_ecu(self,ecu:Ecu):
+    def detach_ecu(self,ecu:Ecu) -> None:
         if self._connected_ecus.get(ecu.id,None) == None:
             raise EcuNotConnectedException(ecu,self)
         del self._connected_ecus[ecu.id]
 
     @abstractmethod
-    def open(self):
+    def open(self) -> None:
         self._bus_status = BusStatus.ACTIVE
 
     @abstractmethod
-    def close(self):
+    def close(self) -> None:
         self._bus_status = BusStatus.OFF
 
     @abstractmethod
-    def send(self,frame:Message):
+    def send(self,frame:Message) -> None:
         #do something
         self._frame_broadcasted.emit(frame)

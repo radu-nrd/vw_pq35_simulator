@@ -1,11 +1,11 @@
 from abc import ABC
 from core import Endianness
 from core import RawType
-from bitstring import BitArray
 
 class Signal(ABC):
     def __init__(self,
                  name:str,
+                 unit:str = "",
                  start_bit:int = 0,
                  length_bits:int = 8,
                  raw_value:RawType = 0,
@@ -15,6 +15,7 @@ class Signal(ABC):
                  tx_ecu: str = "",
                  rx_exus: list[str] = []):
         self._name = name
+        self._unit = unit
         self._start_bit = start_bit
         self._length_bits = length_bits
         self._raw_value = raw_value
@@ -23,11 +24,14 @@ class Signal(ABC):
         self._endianness = endianness
         self._tx_ecu = tx_ecu
         self._rx_ecus = rx_exus
-        self._payload : BitArray = BitArray()
 
     @property
     def name(self):
         return self._name
+
+    @property
+    def unit(self):
+        return self._unit
 
     @property
     def start_bit(self):
@@ -60,7 +64,3 @@ class Signal(ABC):
     @property
     def rx_ecus(self):
         return self._rx_ecus
-
-    @property
-    def payload(self):
-        return self._payload
