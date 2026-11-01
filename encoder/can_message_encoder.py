@@ -3,7 +3,6 @@ from encoder import Encoder
 from core import Message
 import can
 from cantools.database import Database
-import cantools.database.can.message as dbc_msg
 import time
 
 
@@ -13,7 +12,7 @@ class CanMessageEncoder(Encoder[Message,can.Message]):
         self._dbc = dbc
 
     def encode(self, data: Message) -> can.Message:
-        msg_def : dbc_msg.Message = self._dbc.get_message_by_frame_id(frame_id=data.frame_id)
+        msg_def = self._dbc.get_message_by_frame_id(frame_id=data.frame_id)
         raw_payload : bytes = msg_def.encode(data.to_dict())
 
         return can.Message(
