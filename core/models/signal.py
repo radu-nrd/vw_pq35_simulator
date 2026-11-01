@@ -1,29 +1,34 @@
-from abc import ABC
 from core import Endianness
-from core import RawType
+from core import PhysicalValueTypes
+from core import BitOrder
+from core import Signedness
 
-class Signal(ABC):
+class Signal:
     def __init__(self,
                  name:str,
-                 unit:str = "",
                  start_bit:int = 0,
                  length_bits:int = 8,
-                 raw_value:RawType = 0,
+                 physical_value:PhysicalValueTypes = 0,
                  factor: float = 1.0,
                  offset: float = 0.0,
+                 unit:str = "",
                  endianness: Endianness = Endianness.LITTLE_ENDIAN,
+                 bit_order:BitOrder = BitOrder.LSB,
+                 signedness:Signedness = Signedness.UNSIGNED,
                  tx_ecu: str = "",
-                 rx_exus: list[str] = []):
+                 rx_ecus: list[str] = []):
         self._name = name
         self._unit = unit
         self._start_bit = start_bit
         self._length_bits = length_bits
-        self._raw_value = raw_value
+        self._physical_value = physical_value
+        self._bit_order = bit_order
+        self._signedness = signedness
         self._factor = factor
         self._offset = offset
         self._endianness = endianness
         self._tx_ecu = tx_ecu
-        self._rx_ecus = rx_exus
+        self._rx_ecus = rx_ecus
 
     @property
     def name(self):
@@ -42,8 +47,20 @@ class Signal(ABC):
         return self._length_bits
 
     @property
+    def physical_value(self):
+        return self._physical_value
+
+    @property
+    def bit_order(self):
+        return self._bit_order
+
+    @property
+    def signedness(self):
+        return self._signedness
+
+    @property
     def raw_value(self):
-        return self._raw_value
+        return round((self._physical_value - self._offset) / self._factor)
 
     @property
     def factor(self):

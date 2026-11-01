@@ -44,11 +44,16 @@ class Message(ABC):
         return self._tx_ecu
 
     @property
-    def signals(self) -> list[str]:
-        return [signal_name for signal_name in self._signals.keys()]
+    def signals(self) -> dict[str,Signal]:
+        return self._signals
 
     def to_dict(self) -> dict[str,Any]:
         cache_dict : dict[str,Any] = {}
         for sig in self._signals.values():
             cache_dict[sig.name] = sig.raw_value
         return cache_dict
+
+    def add_signal(self,sig:Signal):
+        if sig.name in self._signals.keys():
+            raise Exception('Signal is already defined in the message')
+        self._signals[sig.name] = sig

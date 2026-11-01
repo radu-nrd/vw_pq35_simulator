@@ -1,2 +1,2 @@
 
-RawType = int | float | bool | bytes
+PhysicalValueTypes = int | float | bool
