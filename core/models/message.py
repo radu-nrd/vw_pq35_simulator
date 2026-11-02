@@ -1,27 +1,33 @@
 from abc import ABC
-from core.models.signal import Signal
+from .signal import Signal
 from typing import Any
 
 class Message(ABC):
     def __init__(self,
                  frame_id:int,
-                 length_dlc:int,
+                 name:str,
+                 length_dlc:int = 8,
                  is_extended_id:bool = False,
                  cycle_time_ms : int = 100,
-                 signals : dict[str,Signal] = {},
+                 signals : dict[str,Signal]|None = None,
                  tx_ecu:str="",
-                 rx_ecus:list[str]=[]):
+                 rx_ecus:list[str]|None=None):
         self._frame_id = frame_id
+        self._name = name
         self._is_extended_id = is_extended_id
         self._length_dlc = length_dlc
         self._cycle_time_ms = cycle_time_ms
-        self._signals = signals
-        self._rx_ecus = rx_ecus
+        self._signals = signals if signals is not None else {}
+        self._rx_ecus = rx_ecus if rx_ecus is not None else []
         self._tx_ecu = tx_ecu
 
     @property
     def frame_id(self):
         return self._frame_id
+
+    @property
+    def name(self):
+        return self._name
 
     @property
     def is_extended_id(self):

@@ -1,6 +1,6 @@
-from core import Endianness
-from core import BitOrder
-from core import Signedness
+from .endianness import Endianness
+from .bit_order import BitOrder
+from .signedness import Signedness
 from services import compute_physical_bits_mapping
 
 class SignalInfo:
@@ -8,8 +8,8 @@ class SignalInfo:
                  name:str,
                  start_bit:int,
                  length_bits:int,
-                 factor:int,
-                 offset:int,
+                 factor:float,
+                 offset:float,
                  endianness: Endianness,
                  bit_order:BitOrder,
                  signedness:Signedness,

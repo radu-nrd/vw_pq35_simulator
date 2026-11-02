@@ -1,13 +1,12 @@
-from abc import ABC,abstractmethod
-from core import Ecu
-from core import BusStatus
-from core import Event
-from core import EventEmitter
-from core import Message
+from .ecu import Ecu
+from .bus_status import BusStatus
+from .event import Event
+from .event_emitter import EventEmitter
+from .message import Message
 from exceptions import EcuAlreadyConnectedException
 from exceptions import EcuNotConnectedException
 
-class CanBus(ABC):
+class CanBus():
     def __init__(self,
                  id:str,
                  channel_name: str,
@@ -59,27 +58,23 @@ class CanBus(ABC):
     def frame_broadcasted(self) -> Event[Message]:
         return self._frame_broadcasted
 
-    @abstractmethod
     def attach_ecu(self,ecu:Ecu) -> None:
         if self._connected_ecus.get(ecu.id,None) == None:
             self._connected_ecus[ecu.id] = ecu
-        raise EcuAlreadyConnectedException(ecu,self)
+            return
+        raise EcuAlreadyConnectedException(ecu.id,ecu.name,self.id,self.channel_name)
 
-    @abstractmethod
     def detach_ecu(self,ecu:Ecu) -> None:
         if self._connected_ecus.get(ecu.id,None) == None:
-            raise EcuNotConnectedException(ecu,self)
+            raise EcuNotConnectedException(ecu.id,ecu.name,self.id,self.channel_name)
         del self._connected_ecus[ecu.id]
 
-    @abstractmethod
     def open(self) -> None:
         self._bus_status = BusStatus.ACTIVE
 
-    @abstractmethod
     def close(self) -> None:
         self._bus_status = BusStatus.OFF
 
-    @abstractmethod
     def send(self,frame:Message) -> None:
         #do something
         self._frame_broadcasted.emit(frame)

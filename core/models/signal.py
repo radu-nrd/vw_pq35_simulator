@@ -1,14 +1,13 @@
-from core import Endianness
-from core import PhysicalValueTypes
-from core import BitOrder
-from core import Signedness
+from .endianness import Endianness
+from .bit_order import BitOrder
+from .signedness import Signedness
 
 class Signal:
     def __init__(self,
                  name:str,
                  start_bit:int = 0,
                  length_bits:int = 8,
-                 physical_value:PhysicalValueTypes = 0,
+                 physical_value:int|float|bool = 0,
                  factor: float = 1.0,
                  offset: float = 0.0,
                  unit:str = "",

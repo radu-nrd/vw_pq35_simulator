@@ -5,7 +5,6 @@ from core import MessageInfo
 from core import Signal
 from core import SignalInfo
 from core import Signedness
-from core import PhysicalValueTypes
 
 
 class CanMessageDecoder(Decoder[EncodedMessage,Message]):
@@ -43,6 +42,7 @@ class CanMessageDecoder(Decoder[EncodedMessage,Message]):
     def __build_decoded_message(self,message_info:MessageInfo):
         return Message(
             frame_id=message_info.frame_id,
+            name=message_info.name,
             length_dlc=message_info.length_dlc,
             is_extended_id=message_info.is_extended_id,
             cycle_time_ms=message_info.cycle_time_ms,
@@ -50,7 +50,7 @@ class CanMessageDecoder(Decoder[EncodedMessage,Message]):
             rx_ecus=list(message_info.rx_ecus)
         )
 
-    def __build_signal(self,physical_value:PhysicalValueTypes,signal_info:SignalInfo):
+    def __build_signal(self,physical_value:int|float|bool,signal_info:SignalInfo):
         return Signal(
                 name=signal_info.name,
                 start_bit=signal_info.start_bit,

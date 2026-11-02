@@ -1,6 +1,3 @@
-from core.models.ecu import Ecu
-from core.models.canbus import CanBus
-
 class EcuAlreadyConnectedException(Exception):
-    def __init__(self,ecu:Ecu,bus:CanBus):
-        super().__init__(f'Ecu {ecu.id}({ecu.name}) is already connected on bus {bus.id}({bus.channel_name})')
+    def __init__(self,ecu_id:str,ecu_name:str,bus_id:str,bus_name:str):
+        super().__init__(f'Ecu {ecu_id}({ecu_name}) is already connected on bus {bus_id}({bus_name})')

@@ -1,4 +1,4 @@
-from core import SignalInfo
+from .signal_info import SignalInfo
 
 
 class MessageInfo:

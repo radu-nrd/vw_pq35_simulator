@@ -1,5 +1,5 @@
 from abc import ABC
-from core.models.message import Message
+from .message import Message
 
 class Ecu(ABC):
     def __init__(self,

@@ -1,2 +1,0 @@
-
-PhysicalValueTypes = int | float | bool

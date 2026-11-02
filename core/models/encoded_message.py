@@ -1,6 +1,4 @@
 
-
-
 class EncodedMessage:
     def __init__(self,frame_id:int,data:bytes) -> None:
         self._frame_id = frame_id
